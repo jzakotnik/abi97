@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// If you want to use a PostgresDB
+//datasource db {
+//  provider = "postgresql"
+//  url      = env("DATABASE_URL")
+//}
+
+// If you want to use local DB
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Post {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  sender          String  @default("Anonynmous Coward")
+  email           String  @default("noreply@derjure.de")
+  willParticipate Boolean @default(false)
+  willInfo        Boolean @default(false)
+  text            String  @default("Mein Kommentar...")
+
+
+}
