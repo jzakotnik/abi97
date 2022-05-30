@@ -15,6 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 
 import Typography from "@mui/material/Typography";
 import { blue } from "@mui/material/colors";
+import Checkbox from "@mui/material/Checkbox";
 
 import { DialogContent } from "@mui/material";
 
@@ -45,9 +46,19 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
 
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
+    console.log("Input Change", name, value);
     setMessageData({
       ...messageData,
       [name]: value,
+    });
+  };
+
+  const handleCheckboxChange = (e: any) => {
+    const { name, checked } = e.target;
+    console.log("Input Change", name, checked);
+    setMessageData({
+      ...messageData,
+      [name]: checked,
     });
   };
 
@@ -96,6 +107,34 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
                 fullWidth
                 value={messageData.text}
                 onChange={handleInputChange}
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    id="text-input"
+                    checked={messageData.willParticipate}
+                    name="willParticipate"
+                    value={messageData.willParticipate}
+                    onChange={handleCheckboxChange}
+                  />
+                }
+                label="Bin physisch dabei"
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    id="text-input"
+                    name="willInfo"
+                    checked={messageData.willInfo}
+                    value={messageData.willInfo}
+                    onChange={handleCheckboxChange}
+                  />
+                }
+                label="Haltet mich via eMail auf dem Laufenden"
               />
             </Grid>
 

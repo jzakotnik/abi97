@@ -22,14 +22,14 @@ const item: SxProps<Theme> = {
 };
 
 export default function PinnwandCard({ post }: any) {
-  console.log("Post to the frontend ", post);
+  //console.log("Post to the frontend ", post);
   return (
     <Grid item>
       <Card sx={{ width: 300 }}>
         <CardHeader
           avatar={post.sender.charAt(0)}
           title={post.sender}
-          subheader={post.email}
+          subheader={post.willParticipate}
         />
 
         <CardContent>

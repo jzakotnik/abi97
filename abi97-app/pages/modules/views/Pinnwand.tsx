@@ -26,7 +26,7 @@ function Pinnwand({ posts }: any) {
       spacing={2}
     >
       {posts.map((p) => {
-        return <PinnwandCard post={p} />;
+        return <PinnwandCard key={p.updatedAt} post={p} />;
       })}
     </Grid>
   );

@@ -6,6 +6,9 @@ import client from "../../prisma/prisma";
 type Post = {
   sender: string;
   text: string;
+  email: string;
+  willParticipate: boolean;
+  willInfo: boolean;
 };
 
 export default async function handler(
@@ -23,9 +26,16 @@ export default async function handler(
     // Add a new post
 
     if (req.method === "POST") {
-      const { sender, text } = req.body;
+      const { sender, text, email, willInfo, willParticipate } = req.body;
       console.log("Adding post...", sender, text);
-      const post = await addPost(client, sender, text);
+      const post = await addPost(
+        client,
+        sender,
+        text,
+        email,
+        willParticipate,
+        willInfo
+      );
       return res.status(200).json(post);
     }
 
