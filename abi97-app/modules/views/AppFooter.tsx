@@ -9,7 +9,7 @@ import TextField from "../components/TextField";
 function Copyright() {
   return (
     <React.Fragment>
-      <Typography>Made with Love by Jure</Typography>
+      <Typography>Made with ❤️ by Jure</Typography>
       <Link color="inherit" href="https://github.com/jzakotnik">
         Impressum
       </Link>{" "}

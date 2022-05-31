@@ -20,10 +20,10 @@ function AppAppBar() {
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
+            href="/"
+            sx={{ fontSize: 22 }}
           >
-            {"Abi 97 - unrasiert und fern der Heimat"}
+            {"Abi 97"}
           </Link>
         </Toolbar>
       </AppBar>
