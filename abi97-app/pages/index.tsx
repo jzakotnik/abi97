@@ -14,15 +14,15 @@ import { getAllPosts } from "../repository/post";
 import quotes from "./api/quotes.json";
 import { Post, Prisma, PrismaClient } from "@prisma/client";
 import { GetServerSideProps } from "next";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
+import dayOfYear from "dayjs/plugin/dayOfYear"; // import plugin
 
 const quoteOfTheDay = () => {
-  var dayOfYear = require("dayjs/plugin/dayOfYear");
   dayjs.extend(dayOfYear);
-  let now = dayjs();
+  const now = dayjs();
   const quoteLength = quotes.length;
-  const dayofYear = now.dayOfYear();
-  const index: int = dayofYear % quoteLength;
+  const dayofYear = dayjs("2010-01-01").dayOfYear();
+  const index = dayofYear % quoteLength;
 
   return quotes[index];
 };
