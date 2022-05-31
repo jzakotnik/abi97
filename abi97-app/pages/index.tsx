@@ -8,6 +8,7 @@ import withRoot from "./modules/withRoot";
 
 import { getAllPosts } from "../repository/post";
 import { Post, Prisma, PrismaClient } from "@prisma/client";
+import { GetServerSideProps } from "next";
 
 function Index({ posts }: any) {
   console.log(posts);
@@ -29,7 +30,7 @@ function Index({ posts }: any) {
   );
 }
 
-export const getServerSideProps = async ({ req }) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const posts = await getAllPosts(new PrismaClient());
   return { props: { posts } };
 };

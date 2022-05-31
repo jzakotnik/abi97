@@ -9,6 +9,8 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import Avatar from "@mui/material/Avatar";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import DoNotDisturbAltIcon from "@mui/icons-material/DoNotDisturbAlt";
 
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -21,15 +23,25 @@ const item: SxProps<Theme> = {
   px: 5,
 };
 
+const getIcon = (willParticipate: boolean) => {
+  return willParticipate ? <CheckCircleIcon /> : <DoNotDisturbAltIcon />;
+};
+
 export default function PinnwandCard({ post }: any) {
   //console.log("Post to the frontend ", post);
   return (
     <Grid item>
       <Card sx={{ width: 300 }}>
         <CardHeader
-          avatar={post.sender.charAt(0)}
+          avatar={
+            <Avatar aria-label="will Participate">
+              {getIcon(post.willParticipate)}
+            </Avatar>
+          }
           title={post.sender}
-          subheader={post.willParticipate}
+          subheader={
+            "Ich bin " + (post.willParticipate ? "dabei" : "nicht dabei")
+          }
         />
 
         <CardContent>

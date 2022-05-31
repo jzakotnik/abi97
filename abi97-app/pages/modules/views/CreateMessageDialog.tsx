@@ -46,7 +46,7 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
 
   const handleInputChange = (e: any) => {
     const { name, value } = e.target;
-    console.log("Input Change", name, value);
+    //console.log("Input Change", name, value);
     setMessageData({
       ...messageData,
       [name]: value,
@@ -55,7 +55,7 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
 
   const handleCheckboxChange = (e: any) => {
     const { name, checked } = e.target;
-    console.log("Input Change", name, checked);
+    //console.log("Input Change", name, checked);
     setMessageData({
       ...messageData,
       [name]: checked,
@@ -100,7 +100,7 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
               <TextField
                 id="text-input"
                 name="text"
-                label="Nachricht"
+                label="Bei Abi97 denke ich an..."
                 type="text"
                 multiline
                 rows={4}
@@ -134,7 +134,7 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
                     onChange={handleCheckboxChange}
                   />
                 }
-                label="Haltet mich via eMail auf dem Laufenden"
+                label="Haltet mich auf dem Laufenden"
               />
             </Grid>
 

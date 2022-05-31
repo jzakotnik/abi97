@@ -76,7 +76,7 @@ export default function ProductHero({ refresh }: any) {
         variant="contained"
         size="large"
         component="a"
-        onClick={() => handleSubmit()}
+        onClick={() => handleSubmit("event")}
         sx={{ minWidth: 200 }}
       >
         Nachricht schreiben..

@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import PinnwandCard from "./PinnwandCard";
+import { Post } from "@prisma/client";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -25,7 +26,7 @@ function Pinnwand({ posts }: any) {
       sx={{ marginTop: 4 }}
       spacing={2}
     >
-      {posts.map((p) => {
+      {posts.map((p: Post) => {
         return <PinnwandCard key={p.updatedAt} post={p} />;
       })}
     </Grid>
