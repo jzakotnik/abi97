@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useRouter } from "next/router";
-import AppFooter from "./modules/views/AppFooter";
-import ProductHero from "./modules/views/ProductHero";
-import Pinnwand from "./modules/views/Pinnwand";
-import AppAppBar from "./modules/views/AppAppBar";
-import withRoot from "./modules/withRoot";
+import AppFooter from "../modules/views/AppFooter";
+import ProductHero from "../modules/views/ProductHero";
+import Pinnwand from "../modules/views/Pinnwand";
+import AppAppBar from "../modules/views/AppAppBar";
+import withRoot from "../modules/withRoot";
 
 import { getAllPosts } from "../repository/post";
 import { Post, Prisma, PrismaClient } from "@prisma/client";
