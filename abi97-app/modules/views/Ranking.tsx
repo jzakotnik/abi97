@@ -29,7 +29,7 @@ function Ranking() {
     winner2: "Noch niemand",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     console.log("Changed dropdown to id", e.target.value);
     const winner = ranking.ranks.filter((i) => i.id == e.target.value);
 
