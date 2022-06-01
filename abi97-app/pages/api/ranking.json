@@ -1,0 +1,238 @@
+{
+  "ranks": [
+    {
+      "id": 1,
+      "question": "Musikus der Stufe",
+      "winner1": "Britta Rohlfing",
+      "winner2": "Lena Fischer"
+    },
+    {
+      "id": 2,
+      "question": "Spielkind der Stufe",
+      "winner1": "Tido Hollendieck",
+      "winner2": "Klaus Eichner"
+    },
+    {
+      "id": 3,
+      "question": "Mr. / Mrs. Cool",
+      "winner1": "Henning Vocke",
+      "winner2": "Michael Stammeier"
+    },
+    {
+      "id": 4,
+      "question": "Emanze der Stufe",
+      "winner1": "Tina Spreen",
+      "winner2": "Britta Wischnewski"
+    },
+    {
+      "id": 5,
+      "question": "Manager der Stufe",
+      "winner1": "Henrike Rohlfink",
+      "winner2": "Matthias Henke"
+    },
+    {
+      "id": 6,
+      "question": "Mr. / Mrs. Erotik",
+      "winner1": "Dorothee Künnecke (Toskana 96)",
+      "winner2": "Beate Bocklitz"
+    },
+    {
+      "id": 7,
+      "question": "Mr. / Mrs. Ausrede",
+      "winner1": "Markus Barg",
+      "winner2": "Simone Schekha"
+    },
+    {
+      "id": 8,
+      "question": "Computerfreak der Stufe",
+      "winner1": "Jure Zakotnik",
+      "winner2": "Florian Jürgens"
+    },
+    {
+      "id": 9,
+      "question": "Taxi der Stufe",
+      "winner1": "Tido Hollendieck",
+      "winner2": "Dörthe Grote"
+    },
+    {
+      "id": 10,
+      "question": "Raucher der Stufe",
+      "winner1": "Patrick Möhle",
+      "winner2": "Tina Spreen"
+    },
+    {
+      "id": 11,
+      "question": "Mr. / Mrs. Solarium",
+      "winner1": "Yvonne Hülshorst",
+      "winner2": "Jens Alhorn"
+    },
+    {
+      "id": 12,
+      "question": "Pessimist der Stufe",
+      "winner1": "Jessica Schlottmann",
+      "winner2": "Thorsten Kampeter u. Kathy Bick"
+    },
+    {
+      "id": 13,
+      "question": "Spätzünder der Stufe",
+      "winner1": "Alice Mattlage",
+      "winner2": "Ulrike Pottschmidt"
+    },
+    {
+      "id": 14,
+      "question": "Sweetheart der Stufe",
+      "winner1": "Edi Löwen",
+      "winner2": "Melanie Zokoll"
+    },
+    {
+      "id": 15,
+      "question": "Lache der Stufe",
+      "winner1": "Bärbel Piper",
+      "winner2": "Olli Vogt und Friederike John"
+    },
+    {
+      "id": 16,
+      "question": "ÄÄHHH der Stufe",
+      "winner1": "Dorothee Künnecke",
+      "winner2": "Alice Mattlage"
+    },
+    {
+      "id": 17,
+      "question": "Straßenrowdie der Stufe",
+      "winner1": "Heiko Bulitz",
+      "winner2": "Markus Barg"
+    },
+    {
+      "id": 18,
+      "question": "Mr. / Mrs. Fast Food",
+      "winner1": "Serena Möller",
+      "winner2": "Petra Kuckuck (trotz 3 Jahren Hauwi)"
+    },
+    {
+      "id": 19,
+      "question": "Individuelle Persönlichkeit",
+      "winner1": "Kerstin Wulf",
+      "winner2": "Olli Vogt"
+    },
+    {
+      "id": 20,
+      "question": "Künstler der Stufe",
+      "winner1": "Edi Löwen",
+      "winner2": "Anna Kasten"
+    },
+    {
+      "id": 21,
+      "question": "Mr. / Mrs. Hektik",
+      "winner1": "Friederike John",
+      "winner2": "Katharina Schwarze"
+    },
+    {
+      "id": 22,
+      "question": "Wer trifft den Fettnapf",
+      "winner1": "Tina Spreen",
+      "winner2": "Britta Wischnewski"
+    },
+    {
+      "id": 23,
+      "question": "Moralapostel der Stufe",
+      "winner1": "Ulf Schinke",
+      "winner2": "Olli Vogt"
+    },
+    {
+      "id": 24,
+      "question": "Unwort der Stufe",
+      "winner1": "Alkoholfrei",
+      "winner2": "Dekadenz des Westens"
+    },
+    {
+      "id": 25,
+      "question": "Mr. / Mrs. Power",
+      "winner1": "Henrike Rohlfink",
+      "winner2": "Jens Alhorn"
+    },
+    {
+      "id": 26,
+      "question": "Bauer / Landwirt der Stufe",
+      "winner1": "Henrik Oevermann",
+      "winner2": "Stefan Oevermann"
+    },
+    {
+      "id": 27,
+      "question": "Sportler der Stufe",
+      "winner1": "Jens Alhorn",
+      "winner2": "Edi Löwen"
+    },
+    {
+      "id": 28,
+      "question": "Lexikon der Stufe",
+      "winner1": "Olli Vogt",
+      "winner2": "Thorsten Stegemann"
+    },
+    {
+      "id": 29,
+      "question": "Optimist der Stufe",
+      "winner1": "Henrike Rohlfink",
+      "winner2": "Markus Barg"
+    },
+    {
+      "id": 30,
+      "question": "Paar der Stufe",
+      "winner1": "Sascha Müller und Natalie Reimer",
+      "winner2": "Sascha Pilarski und Friederike John"
+    },
+    {
+      "id": 31,
+      "question": "Trendsetter der Stufe",
+      "winner1": "Sarah Schwier",
+      "winner2": "Michael Stammeier"
+    },
+    {
+      "id": 32,
+      "question": "Spitzname der Stufe",
+      "winner1": "Fussel",
+      "winner2": "ÖT"
+    },
+    {
+      "id": 33,
+      "question": "Mr. / Mrs. Kicker",
+      "winner1": "Michael Grewe",
+      "winner2": "Tido Hollendieck"
+    },
+    {
+      "id": 34,
+      "question": "Meiste Zeit in der Bücherei",
+      "winner1": "Die Büchereiclique (Olli und co)",
+      "winner2": "Keine Angaben"
+    },
+    {
+      "id": 35,
+      "question": "Mr. Langhaar",
+      "winner1": "Klaus Eichner",
+      "winner2": "Christian Grotemeier"
+    },
+    {
+      "id": 36,
+      "question": "Mr. / Mrs. soziale Ader",
+      "winner1": "Simone Schekha",
+      "winner2": "Angelika Kalinowsky"
+    },
+    {
+      "id": 37,
+      "question": "Mr. / Mrs. Kaffeetrinker",
+      "winner1": "Thorsten Kampeter",
+      "winner2": "Stefan Oevermann"
+    },
+    {
+      "id": 38,
+      "question": "Meiste Pfeiler in der Tiefgarage",
+      "winner1": "Dörthe Grote",
+      "winner2": "Katharina Riemer"
+    },
+    {
+      "id": 39,
+      "question": "Mr. / Mrs. gute Laune",
+      "winner1": "Henrike Rohlfink",
+      "winner2": "Daniela Riedel"
+    }
+  ]
+}

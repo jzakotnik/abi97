@@ -20,18 +20,22 @@ function GroupPhoto() {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      sx={{ marginTop: 4 }}
+      sx={{ marginTop: 4, paddingLeft: 5, paddingRight: 5 }}
       spacing={2}
     >
-      <Typography variant="h4">Und hier der beste Jahrgang 1997...</Typography>
-      <Box
-        component="img"
-        sx={{
-          width: "80%",
-        }}
-        alt="Abi 97 image"
-        src="/abi.jpg"
-      />
+      <Grid item>
+        <Typography variant="h4">Der beste Jahrgang 1997...</Typography>
+      </Grid>
+      <Grid container justifyContent="center" alignItems="center">
+        <Box
+          component="img"
+          sx={{
+            width: "80%",
+          }}
+          alt="Abi 97 image"
+          src="/abi.jpg"
+        />
+      </Grid>
     </Grid>
   );
 }

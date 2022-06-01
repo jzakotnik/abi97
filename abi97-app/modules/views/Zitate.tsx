@@ -21,16 +21,14 @@ function Zitate({ quote }: any) {
       direction="column"
       justifyContent="center"
       alignItems="center"
-      sx={{ marginTop: 4 }}
+      sx={{ marginTop: 4, paddingLeft: 5, paddingRight: 5 }}
       spacing={2}
     >
       <Grid item>
         <Typography variant="h4">Zitat des Tages</Typography>
       </Grid>
       <Grid item>
-        <Paper elevation={0} sx={{ marginLeft: 20, marginRight: 20 }}>
-          <Typography variant="h5">{quote}</Typography>
-        </Paper>
+        <Typography variant="h5">{quote}</Typography>
       </Grid>
     </Grid>
   );

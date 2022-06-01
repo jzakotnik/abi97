@@ -10,36 +10,17 @@ function Copyright() {
   return (
     <React.Fragment>
       <Typography>Made with ❤️ by Jure</Typography>
+      <Typography>Schickt uns eine eMail:</Typography>
+      <Link color="inherit" href="mailto:abi97@derjure.de">
+        Orga Team eMail
+      </Link>{" "}
+      <Typography>Impressum auf</Typography>
       <Link color="inherit" href="https://github.com/jzakotnik">
-        Impressum
+        Github
       </Link>{" "}
     </React.Fragment>
   );
 }
-
-const iconStyle = {
-  width: 48,
-  height: 48,
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: "warning.main",
-  mr: 1,
-  "&:hover": {
-    bgcolor: "warning.dark",
-  },
-};
-
-const LANGUAGES = [
-  {
-    code: "en-US",
-    name: "English",
-  },
-  {
-    code: "fr-FR",
-    name: "Français",
-  },
-];
 
 export default function AppFooter() {
   return (
