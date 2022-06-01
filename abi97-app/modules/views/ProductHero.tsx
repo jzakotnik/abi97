@@ -68,7 +68,7 @@ export default function ProductHero({ refresh }: any) {
         variant="h5"
         sx={{ mb: 4, mt: { sx: 4, sm: 10 } }}
       >
-        10. September 2022, Marktschänke Rahden
+        10. September 2022 ab 16 Uhr, Marktschänke Rahden
       </Typography>
 
       <Button
