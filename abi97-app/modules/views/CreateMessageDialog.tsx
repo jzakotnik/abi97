@@ -16,6 +16,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import { blue } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
+import isEmail from "validator/lib/isEmail";
 
 import { DialogContent } from "@mui/material";
 
@@ -68,6 +69,10 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
     console.log(messageData);
   };
 
+  const validateEmail = (email: string) => {
+    return !(isEmail(messageData.email) || messageData.email === "");
+  };
+
   return (
     <Dialog fullWidth maxWidth="sm" onClose={onClose} open={open}>
       <DialogTitle>Meine Nachricht..</DialogTitle>
@@ -87,6 +92,7 @@ export default function CreateMessageDialog(props: CreateMessageDialogProps) {
             </Grid>
             <Grid item xs={12}>
               <TextField
+                error={validateEmail(messageData.email)}
                 id="email-input"
                 name="email"
                 label="eMail"

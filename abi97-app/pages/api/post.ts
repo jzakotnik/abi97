@@ -4,6 +4,7 @@ import { getAllPosts, addPost } from "../../repository/post";
 import client from "../../prisma/prisma";
 
 import nodemailer from "nodemailer";
+import isEmail from "validator/lib/isEmail";
 
 type Post = {
   sender: string;
@@ -64,16 +65,20 @@ export default async function handler(
 
     if (req.method === "POST") {
       const { sender, text, email, willInfo, willParticipate } = req.body;
+      let sanitizedeMail = email;
+      if (!isEmail(email)) {
+        sanitizedeMail = "Invalid eMail";
+      }
       console.log("Adding post...", sender, text);
       const post = await addPost(
         client,
         sender,
         text,
-        email,
+        sanitizedeMail,
         willParticipate,
         willInfo
       );
-      const eMailText = `Autor ${sender} \nInhalt ${text} \neMail ${email} \n `;
+      const eMailText = `Autor ${sender} \nInhalt ${text} \neMail ${sanitizedeMail} \n `;
       sendNotification(eMailText);
       return res.status(200).json(post);
     }
