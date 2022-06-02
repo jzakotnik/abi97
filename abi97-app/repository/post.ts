@@ -22,7 +22,13 @@ export async function removePost(c: PrismaClient, id: string) {
 }
 
 export async function getAllPosts(c: PrismaClient) {
-  const posts = await c.post.findMany();
+  const posts = await c.post.findMany({
+    orderBy: [
+      {
+        createdAt: "desc",
+      },
+    ],
+  });
   return posts.map((p) => ({
     ...p,
     createdAt: p.createdAt.toISOString(),
