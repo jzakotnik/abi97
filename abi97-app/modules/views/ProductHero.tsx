@@ -79,7 +79,7 @@ export default function ProductHero({ refresh }: any) {
         onClick={() => handleSubmit("event")}
         sx={{ minWidth: 200 }}
       >
-        Nachricht schreiben..
+        Dabei?
       </Button>
       <CreateMessageDialog
         open={messageDialogOpen}
@@ -91,7 +91,8 @@ export default function ProductHero({ refresh }: any) {
         }}
       />
       <Typography variant="body2" color="inherit" sx={{ mt: 2 }}>
-        Ja, ich will euch eine Nachricht auf der Pinnwand hinterlassen..
+        Ja, ich will Bescheid geben ob ich komme und uns eine inspirierende
+        Nachricht auf der Pinnwand hinterlassen..
       </Typography>
     </ProductHeroLayout>
   );

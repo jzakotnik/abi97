@@ -9,7 +9,12 @@ export default async function handler(req: NextApiRequest, res: any) {
   try {
     // Delete all participants
     if (req.method === "DELETE") {
-      const deletedParticipants = await removeAllPosts(client);
+      //const body = JSON.parse(req.body);
+
+      if (req.body.secret == process.env.DELETE_CODE) {
+        console.log("Password is ok..");
+        const deletedParticipants = await removeAllPosts(client);
+      }
 
       return res.status(200).json({ result: "Deleted all records" });
     }

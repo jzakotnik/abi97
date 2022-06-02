@@ -1,4 +1,9 @@
+@secret = {{$dotenv DELETE_CODE}}
 @url = http://localhost:3000/api/resetPinnwand
+//@url = https://abi97.derjure.de/api/resetPinnwand
 DELETE {{url}}  HTTP/1.1
 content-type: application/json
 
+{
+    "secret": "{{secret}}"
+}
