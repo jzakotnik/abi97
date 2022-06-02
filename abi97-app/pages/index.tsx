@@ -10,6 +10,8 @@ import AppAppBar from "../modules/views/AppAppBar";
 import withRoot from "../modules/withRoot";
 import Divider from "@mui/material/Divider";
 
+import Head from "next/head";
+
 import { getAllPosts } from "../repository/post";
 import quotes from "./api/quotes.json";
 import { Post, Prisma, PrismaClient } from "@prisma/client";
@@ -21,8 +23,9 @@ const quoteOfTheDay = () => {
   dayjs.extend(dayOfYear);
   const now = dayjs();
   const quoteLength = quotes.length;
-  const dayofYear = dayjs("2010-01-01").dayOfYear();
-  const index = dayofYear % quoteLength;
+  const daynumber = dayjs().dayOfYear();
+  const index = daynumber % quoteLength;
+  console.log("Shuffling Quote", quoteLength, daynumber, index);
 
   return quotes[index];
 };
@@ -39,6 +42,12 @@ function Index({ posts }: any) {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>Abi 97 Jubiläum</title>
+        <meta name="keywords" content="abi 97" />
+        <meta name="author" content="Jure Zakotnik" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <AppAppBar />
       <ProductHero refresh={refreshData} />
       <Pinnwand posts={posts} />
