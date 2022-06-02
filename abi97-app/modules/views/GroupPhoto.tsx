@@ -5,6 +5,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
+import Image from "next/image";
+import abiPic from "../../public/abi.jpg";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -27,14 +29,7 @@ function GroupPhoto() {
         <Typography variant="h4">Der beste Jahrgang 1997...</Typography>
       </Grid>
       <Grid container justifyContent="center" alignItems="center">
-        <Box
-          component="img"
-          sx={{
-            width: "80%",
-          }}
-          alt="Abi 97 image"
-          src="/abi.jpg"
-        />
+        <Image src={abiPic} alt="Abi Gruppenphoto" />
       </Grid>
     </Grid>
   );
