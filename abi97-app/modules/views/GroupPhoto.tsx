@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import Typography from "../components/Typography";
 import Image from "next/image";
 import abiPic from "../../public/abi.jpg";
+import abi25later from "../../public/abi25later.jpg";
 
 const item: SxProps<Theme> = {
   display: "flex",
@@ -30,6 +31,12 @@ function GroupPhoto() {
       </Grid>
       <Grid container justifyContent="center" alignItems="center">
         <Image src={abiPic} alt="Abi Gruppenphoto" />
+      </Grid>
+      <Grid item>
+        <Typography variant="h4">25 Jahre später...</Typography>
+      </Grid>
+      <Grid container justifyContent="center" alignItems="center">
+        <Image src={abi25later} alt="Abi Gruppenphoto" />
       </Grid>
     </Grid>
   );
